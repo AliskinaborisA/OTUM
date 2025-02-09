@@ -1,7 +1,7 @@
 .running-text-container {
     overflow: hidden;
     white-space: nowrap;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     position: relative;
     background: white;

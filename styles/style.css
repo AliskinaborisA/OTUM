@@ -1,6 +1,8 @@
 body {
     background: #74E1FF;
-    overflow-x: hidden;
+    width: 100%;
     font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
 }
 
