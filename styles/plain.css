@@ -1,0 +1,13 @@
+.plain-line {
+    width: 100%;
+    height: 80px;
+    margin: 12px auto;
+    background-size: 80px auto; /* задаём размер каждой копии */
+    background: url('../assets/plain.svg') repeat-x center;
+    animation: plain-animation 1s linear infinite;
+}
+
+@keyframes plain-animation {
+    from { background-position: 0 50%; }
+    to { background-position: 160px 50%; } /* Двигаем только половину, чтобы эффект был бесшовным */
+}

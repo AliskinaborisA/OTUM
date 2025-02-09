@@ -1,0 +1,78 @@
+/* Контейнер, в котором располагаются облака */
+.clouds-container {
+    position: relative;
+    width: 100%;    /* можно задать любую ширину */
+    height: 800px;   /* и высоту */
+    margin: 50px auto;  /* по центру страницы */
+    overflow: hidden;
+}
+
+.cloud-wrapper-1 { top: 20%; left: 20%; }
+.cloud-wrapper-2 { top: 20%; left: 39%; }
+.cloud-wrapper-3 { top: 40%; left: 20%; }
+.cloud-wrapper-4 { top: 40%; left: 39%; }
+
+.cloud-wrapper-5 { top: 0; left: 0; }
+.cloud-wrapper-6 { top: 0; left: 80%; }
+.cloud-wrapper-7 { top: 70%; left: 0; }
+.cloud-wrapper-8 { top: 70%; left: 80%; }
+
+/* Обертки для каждого облака – располагаются в центре */
+.big-cloud-wrapper {
+    position: absolute;
+    transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+/* Размеры изображений (регулируйте по необходимости) */
+.big-cloud-wrapper img {
+    width: 602px;
+    height: auto;
+}
+
+.small-cloud-wrapper {
+    position: absolute;
+    transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+.small-cloud-wrapper img {
+    width: 383px;
+    height: auto;
+}
+
+.clouds-container:hover .big-cloud-wrapper.cloud-1 {
+    transform: translate(-50%, -30%);
+}
+
+.clouds-container:hover .big-cloud-wrapper.cloud-2 {
+    transform: translate(40%, -30%);
+}
+
+.clouds-container:hover .big-cloud-wrapper.cloud-3 {
+    transform: translate(-40%, 20%);
+}
+
+.clouds-container:hover .big-cloud-wrapper.cloud-4 {
+    transform: translate(40%, 20%);
+}
+
+.clouds-container:hover .small-cloud-wrapper.cloud-5 {
+    transform: translate(85%, 110%);
+}
+
+.clouds-container:hover .small-cloud-wrapper.cloud-6 {
+    transform: translate(-190%, 20%);
+}
+
+.clouds-container:hover .small-cloud-wrapper.cloud-7 {
+    transform: translate(170%, 0);
+}
+
+.clouds-container:hover .small-cloud-wrapper.cloud-8 {
+    transform: translate(-60%, -120%);
+}
+
+.otum-text {
+    top: 45%;
+    left: 33%;
+    position: relative;
+}

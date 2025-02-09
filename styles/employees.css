@@ -1,0 +1,89 @@
+.employee-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 600px;
+}
+
+.employee-container img {
+    width: fit-content;
+}
+
+.smile-employee-1 { display: block; }
+.smile-employee-2 { display: block; }
+.smile-employee-3 { display: block; }
+
+.emp-text-1 { display: none }
+.emp-text-2 { display: none }
+.emp-text-3 { display: none }
+
+.sad-employee { display: none; }
+.employee-wrapper-1:hover .sad-employee { display: block; }
+.employee-wrapper-1:hover .emp-text-1 { display: block; }
+.employee-wrapper-1:hover .loading-1 { display: none; }
+.employee-wrapper-1:hover .smile-employee-1 { display: none; }
+
+.wink-employee { display: none; }
+.employee-wrapper-2:hover .wink-employee { display: block; }
+.employee-wrapper-2:hover .emp-text-2 { display: block; }
+.employee-wrapper-2:hover .loading-2 { display: none; }
+.employee-wrapper-2:hover .smile-employee-2 { display: none; }
+
+.freak-employee { display: none; }
+.employee-wrapper-3:hover .freak-employee { display: block; }
+.employee-wrapper-3:hover .emp-text-3 { display: block; }
+.employee-wrapper-3:hover .loading-3 { display: none; }
+.employee-wrapper-3:hover .smile-employee-3 { display: none; }
+
+.loading-1 {
+    margin: 70px auto;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+.loading-2 {
+    margin: 70px auto;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+.loading-3 {
+    margin: 70px auto;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+
+.dot {
+    opacity: 0;
+    animation: blink 1.5s infinite;
+    animation-fill-mode: both;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes blink {
+    0%, 20%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.emp-title {
+    font-size: 64px;
+    color: #1F2D38;
+    letter-spacing: 42px;
+    font-weight: bold;
+    text-align: center;
+}

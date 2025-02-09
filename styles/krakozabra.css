@@ -1,0 +1,73 @@
+.krakozabra-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
+    margin: 50px auto;  /* по центру страницы */
+    padding: 40px;
+    overflow: hidden;
+}
+
+.krakozabra-wrapper {
+    position: absolute;
+    transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+.back-image {
+    top: 0;
+    left: 0;
+}
+
+.krakozabra-wrapper-1 { top: 28%; left: 31%; animation: left-and-right-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-1 img { width: 127px; height: auto; }
+
+.krakozabra-wrapper-2 { top: 3%; left: 32%; animation: top-and-bottom-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-2 img { width: 74px; height: auto; rotate: -45grad }
+
+.krakozabra-wrapper-3 { top: 17%; left: 50%; animation: left-and-right-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-3 img { width: 74px; height: auto; }
+
+.krakozabra-wrapper-4 { top: 60%; left: 25%; animation: top-and-bottom-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-4 img { width: 74px; height: auto; }
+
+.krakozabra-wrapper-5 { top: 76%; left: 38%; animation: left-and-right-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-5 img { width: 99px; height: 88px; }
+
+.krakozabra-wrapper-6 { top: 60%; left: 50%; animation: top-and-bottom-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-6 img { width: 70px; height: 62px; }
+
+.krakozabra-wrapper-7 { top: 80%; left: 60%; animation: left-and-right-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-7 img { width: 121px; height: 90px; }
+
+.krakozabra-wrapper-8 { top: 50%; left: 62%; animation: top-and-bottom-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-8 img { width: 105px; height: auto; }
+
+.krakozabra-wrapper-9 { top: 20%; left: 80%; animation: left-and-right-shake 0.2s steps(2) infinite; }
+.krakozabra-wrapper-9 img { width: 75px; height: 67px; }
+
+@keyframes left-and-right-shake{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(2px); }
+}
+@keyframes top-and-bottom-shake {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(2px); }
+}
+
+@keyframes text-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.help-text {
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    margin: 16px;
+    top: 40%;
+    left: 40%;
+    transform-origin: center center;
+    animation: text-animation 2s ease-in-out infinite;
+}
